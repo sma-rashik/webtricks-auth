@@ -16,7 +16,7 @@ const Login: React.FC<LoginProps> = () => {
           </div>
 
           <form className="mt-6">
-            <div className="mb-4">
+            <div className="mb-4 relative">
               <p className="text-left text-gray-600 font-medium mb-1">Email</p>
               <input
                 type="email"

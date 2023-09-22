@@ -28,12 +28,7 @@ const SignUp: React.FC<SignUpProps> = () => {
               />
             </div>
             <div className="mb-4">
-              <label
-                htmlFor="Email"
-                className="block text-gray-600 font-medium mb-1"
-              >
-                Email
-              </label>
+              <p className="text-left text-gray-600 font-medium mb-1">Email</p>
               <input
                 type="email"
                 required
