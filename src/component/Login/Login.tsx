@@ -13,11 +13,7 @@ const Login: React.FC<LoginProps> = () => {
               <div className="w-96 m-auto h-full flex flex-col justify-center text-center items-center">
                 <form className="w-full h-full p-3 md:p-20 rounded shadow-2xl">
                   <div className="text-center m-5">
-                    <img
-                      className="w-32 h-24 rounded-full shadow-2xl m-auto"
-                      src={logo}
-                      alt=""
-                    />
+                    <img className="w-20 h-12  m-auto" src={logo} alt="" />
                   </div>
                   <p className="text-xl my-4"> Welcome Back to WebTricker</p>
                   <div className="mb-6">
