@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/webtricker-logo-black.jpg";
+import { Link } from "react-router-dom";
 
 interface SignUpProps {}
 
@@ -7,7 +8,7 @@ const SignUp: React.FC<SignUpProps> = () => {
   return (
     <div className="mt-8 sm:mt-16 flex justify-center items-center">
       <div className="w-full sm:w-11/12 md:w-3/4 lg:w-1/2 xl:w-1/3">
-        <div className="bg-white shadow-md rounded p-4">
+        <div className="bg-white shadow-2xl rounde-2xl p-4">
           <div className="text-center">
             <img className="w-20 h-12 m-auto" src={logo} alt="" />
             <h1 className="text-xl font-semibold mt-4">
@@ -16,8 +17,10 @@ const SignUp: React.FC<SignUpProps> = () => {
           </div>
 
           <form className="mt-6">
-            <div className="mb-4">
-              <p className="text-left text-gray-600 font-medium mb-1">Name</p>
+            <div className="mb-4 text-left">
+              <label className="text-gray-600 font-medium mb-1 block">
+                Name
+              </label>
               <input
                 type="text"
                 required
@@ -27,8 +30,10 @@ const SignUp: React.FC<SignUpProps> = () => {
                 placeholder="Your Name"
               />
             </div>
-            <div className="mb-4">
-              <p className="text-left text-gray-600 font-medium mb-1">Email</p>
+            <div className="mb-4 text-left">
+              <label className="text-gray-600 font-medium mb-1 block">
+                Email
+              </label>
               <input
                 type="email"
                 required
@@ -38,10 +43,10 @@ const SignUp: React.FC<SignUpProps> = () => {
                 placeholder="Your Email"
               />
             </div>
-            <div className="mb-4 relative">
-              <p className=" text-left text-gray-600 font-medium mb-1">
+            <div className="mb-4 text-left relative">
+              <label className="text-gray-600 font-medium mb-1 block">
                 Password
-              </p>
+              </label>
               <input
                 type="password"
                 id="password"
@@ -51,7 +56,11 @@ const SignUp: React.FC<SignUpProps> = () => {
                 placeholder="Your password"
               />
             </div>
-            <button className="bg-gray-950 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded w-full">
+
+            <button
+              type="submit"
+              className="bg-gray-950  text-white font-semibold py-3 px-6 rounded w-full"
+            >
               Sign Up
             </button>
           </form>
@@ -59,9 +68,9 @@ const SignUp: React.FC<SignUpProps> = () => {
           <div className="mt-4 text-center">
             <p className="text-sm text-gray-600">
               Already have an account?{" "}
-              <a href="#" className="text-blue-500 hover:underline">
+              <Link to="/login" className="text-blue-500 hover:underline">
                 Log in
-              </a>
+              </Link>
             </p>
           </div>
         </div>
